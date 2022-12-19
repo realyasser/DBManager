@@ -6,6 +6,16 @@
 
 ### 📋 Requirements
 
+Coming soon....
+
+### 💻 Usage
+
+**IMPORTANT NOTE:** We recommend you to use this software only for good purposes. I am NOT responsible if you used it for cheating or leaking data.
+
+
+
+[Coming soon]
+
 
 
 <div align="center">
