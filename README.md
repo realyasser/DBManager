@@ -6,7 +6,23 @@
 
 ### 📋 Requirements
 
-Coming soon....
+It depends on your download. If you have source code, follow its table. Same thing goes for executable file.
+
+**Source code:**
+
+|          | Minimum requirements | Recommended requirements |
+| -------- | -------------------- | ------------------------ |
+| RAM      | 15 MB                | +256 MB                  |
+| Software | Python 3.x           | Python 3.10.1            |
+
+**Executable file:**
+
+|                  | Minimum requirements | Recommended requirements |
+| ---------------- | -------------------- | ------------------------ |
+| RAM              | 20 MB                | +256 MB                  |
+| Operating System | Windows 8.1, 10, 11  | Windows 10               |
+
+
 
 ### 💻 Usage
 
@@ -15,6 +31,10 @@ Coming soon....
 #### 1. Download
 
 That all you have to do is downloading this software and run it.
+
+#### 2. Start using it
+
+Input your Database File location and start managing and browsing it.
 
 ### ❓ Why did I make this for free?
 
