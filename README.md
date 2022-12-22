@@ -13,6 +13,10 @@
 
 **DB Manager** is a software that gives you ability to edit, control and browse Database files `[.db]` for free. It is one of programs that is made by yasserprogamer in Python.
 
+**NOTE:** This is my personal project. I won't add anyone as a collaborator but I may accept pull requests.
+
+---
+
 ### 📋 Requirements
 
 It depends on your download. If you have source code, follow its table. Same thing goes for executable file.
@@ -33,7 +37,7 @@ It depends on your download. If you have source code, follow its table. Same thi
 | RAM              | 20 MB                | +256 MB                  |
 | Operating System | Windows 8.1, 10, 11  | Windows 10               |
 
-
+---
 
 ### 💻 Usage
 
@@ -46,6 +50,8 @@ That all you have to do is downloading this software and run it.
 #### 2. Start using it
 
 Input your Database File location and start managing and browsing it.
+
+---
 
 ### ❓ Why did I make this for free?
 
