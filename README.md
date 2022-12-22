@@ -25,7 +25,6 @@ It depends on your download. If you have source code, follow its table. Same thi
 
 |          | Minimum requirements | Recommended requirements |
 | -------- | -------------------- | ------------------------ |
-| RAM      | 15 MB                | +256 MB                  |
 | Software | Python 3.x           | Python 3.10.1            |
 
 **💿 Executable file:**
@@ -61,7 +60,7 @@ I literally made this to manage my own DB files and stop coding all times to do 
 
 **⭐ Support me by staring my repository ❤️**
 
-
+---
 
 <div align="center">
 Thank you for downloading my software
