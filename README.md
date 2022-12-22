@@ -1,3 +1,10 @@
+<p align="center">  
+<a href="https://www.python.org/"> <img src="https://img.shields.io/badge/made%20with-python%20%F0%9F%90%8D-brightgreen" alt="madewithpython" border="0"></a>
+<a href="https://github.com/yasserprogamer/DBManager/blob/main/LICENSE"> <img src="https://img.shields.io/github/license/yasserprogamer/DBManager" alt="Apache-2.0" border="0"></a> 
+<a href="https://github.com/yasserprogamer/DBManager/releases"> <img src="https://img.shields.io/github/v/release/yasserprogamer/DBManager?include_prereleases" alt"latestrelease"></a>
+<a href="https://github.com/yasserprogamer/DBManager/releases"> <img src="https://img.shields.io/github/downloads/yasserprogamer/DBManager/total" alt="downloads" border="0"></a>
+</p>
+
 # 💾 DB Manager
 
 ### 📕 Introduction
