@@ -17,14 +17,16 @@
 
 It depends on your download. If you have source code, follow its table. Same thing goes for executable file.
 
-**Source code:**
+**📄 Source code:**
 
 |          | Minimum requirements | Recommended requirements |
 | -------- | -------------------- | ------------------------ |
 | RAM      | 15 MB                | +256 MB                  |
 | Software | Python 3.x           | Python 3.10.1            |
 
-**Executable file:**
+**💿 Executable file:**
+
+- **Important note:** You must have at the least <u>Microsoft Visual C++ 2015</u>: [Download now](https://www.microsoft.com/en-us/download/details.aspx?id=53840)
 
 |                  | Minimum requirements | Recommended requirements |
 | ---------------- | -------------------- | ------------------------ |
