@@ -5,6 +5,8 @@
 <a href="https://github.com/yasserprogamer/DBManager/releases"> <img src="https://img.shields.io/github/downloads/yasserprogamer/DBManager/total" alt="downloads" border="0"></a>
 </p>
 
+<img src="logo.png" width="150" height="150" align="right" style="border-radius: 10px" />
+
 # 💾 DB Manager
 
 ### 📕 Introduction
@@ -46,6 +48,10 @@ Input your Database File location and start managing and browsing it.
 ### ❓ Why did I make this for free?
 
 I literally made this to manage my own DB files and stop coding all times to do that. In addition, I made this to help other people and to invest my programming skills. I really wish I created something useful for once. 
+
+
+
+**⭐ Support me by staring my repository ❤️**
 
 
 
