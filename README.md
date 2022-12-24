@@ -36,7 +36,7 @@ It depends on your download. If you have source code, follow its table. Same thi
 | RAM              | 20 MB                | +256 MB                  |
 | Operating System | Windows 10, 11       | Windows 10               |
 
-Older Windows versions support may be added in next release.
+Older Windows versions support may be added in the next release.
 
 ---
 
