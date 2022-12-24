@@ -1,5 +1,7 @@
 import sqlite3
 import utility
+import os
+import MetaData
 
 def CreateTable(cursor: sqlite3.Cursor):
     utility.clear()
@@ -84,7 +86,7 @@ def ShowTables(cursor: sqlite3.Cursor):
     input("\033[37;1mPress ENTER to back to the menu ")
     return
 
-def ListTables(cursor: sqlite3.Cursor):
+def ListTables(cursor: sqlite3.Cursor, lowercaseOutput = True) -> list:
     Results = cursor.execute("SELECT name FROM sqlite_schema WHERE type='table' ORDER BY name;")
     TablesList = Results.fetchall()
     if len(TablesList) == 0:
@@ -93,11 +95,16 @@ def ListTables(cursor: sqlite3.Cursor):
     else:
         print("\033[38;2;218;218;218m")
         print("Available tables:")
-        tables = ""
+        ListOfTables = []
+        OutputList = []
         for table in TablesList:
-            tables += f"{table[0]}, "
-        print(tables)
-    return
+            ListOfTables.append(table[0])
+            if lowercaseOutput:
+                OutputList.append(table[0].lower())
+        print(", ".join(ListOfTables))
+        if not lowercaseOutput:
+            OutputList = ListOfTables
+    return OutputList
 
 def InsertRow(cursor: sqlite3.Cursor, DB: sqlite3.Connection):
     utility.clear()
@@ -449,5 +456,46 @@ def ShowTableContent(cursor: sqlite3.Cursor):
             i += 1
         print(LastLine)
         print()
+    input("\033[37;1mPress ENTER to back to the menu ")
+    return
+
+def DBToCSV(cursor: sqlite3.Cursor):
+    utility.clear()
+    utility.Title()
+    TablesList = ListTables(cursor=cursor)
+    InSelectingTable = True
+    while InSelectingTable:
+        print()
+        print("\033[38;2;255;255;255mSelect a table.")
+        TableSelection = input("> \033[38;2;0;255;0m")
+        if TableSelection.replace(" ", "") == "":
+            print("\033[38;2;255;0;0m[!] Invalid table name.")
+        elif not TableSelection.lower() in TablesList:
+            print("\033[38;2;255;0;0m[!] Invalid table.")
+        else:
+            InSelectingTable = False
+    print()
+    print("\033[38;2;255;223;0m[+] Converting data to CSV file....")
+    if not os.path.exists(f"./csv/{MetaData.Filename.replace('.', '_')}/"):
+        os.makedirs(f"./csv/{MetaData.Filename.replace('.', '_')}/")
+    file = open(f"./csv/{MetaData.Filename.replace('.', '_')}/{TableSelection}.csv", "w")
+    ColNames = cursor.execute(f"PRAGMA table_info({TableSelection});").fetchall()
+    Columns = []
+    for Column in ColNames:
+        Columns.append(f'"{Column[1]}"')
+    file.write(f'{",".join(Columns)}\n')
+    TableData = cursor.execute(f"SELECT * FROM {TableSelection};")
+    Rows = []
+    for data in TableData:
+        DataWithQuotes = []
+        for d in data:
+            DataWithQuotes.append(f'"{d}"')
+        Rows.append(",".join(DataWithQuotes))
+    file.write("\n".join(Rows))
+    file.close()
+    print()
+    print("\033[38;2;0;255;0m[+] Done!")
+    print(f"\033[38;2;255;255;255m[>] Directory: \033[38;2;223;223;223m{os.getcwd()}\\csv\\{MetaData.Filename.replace('.', '_')}\\{TableSelection}.csv")
+    print()
     input("\033[37;1mPress ENTER to back to the menu ")
     return
