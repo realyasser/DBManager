@@ -58,9 +58,15 @@ Input your Database File location and start managing and browsing it.
 
 I literally made this to manage my own DB files and stop coding all times to do that. In addition, I made this to help other people and to invest my programming skills. I really wish I created something useful for once. 
 
+---
+
+### 💰 Donate me
+
+**💵 Support me by donating me a few money. It will help me in making more projects and building my career.**
+
+<a href="https://www.buymeacoffee.com/yasserprogamer" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
 
-**⭐ Support me by staring my repository ❤️**
 
 ---
 
