@@ -54,6 +54,21 @@ Input your Database File location and start managing and browsing it.
 
 ---
 
+### 👨‍💻 Contributors
+
+I would be happy to accept a pull request from someone wants to contribute in this project. Anyone who wants to fix bugs and errors. 
+
+---
+
+### ⚠️ Report a bug
+
+There are 2 ways to report bug:
+
+- Submit a new issue in this repository.
+- Submit a bug report form from https://bug.dbmanager.ml/
+
+---
+
 ### ❓ Why did I make this for free?
 
 I literally made this to manage my own DB files and stop coding all times to do that. In addition, I made this to help other people and to invest my programming skills. I really wish I created something useful for once. 
