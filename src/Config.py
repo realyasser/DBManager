@@ -1,5 +1,6 @@
 import configparser
 import os
+import sys
 
 def CheckFileExistence():
     if os.path.exists("config.ini"):
@@ -11,6 +12,14 @@ def CreateConfigFile():
     config = configparser.ConfigParser(allow_no_value=True)
     config["Updates"] = {}
     config["Updates"]["check-for-updates"] = None
+    config["Settings"] = {}
+    UseColors = False
+    if os.name != "nt":
+        UseColors = True
+    else:
+        if sys.getwindowsversion().major >= 10:
+            UseColors = True
+    config["Settings"]["Use-Colors"] = UseColors
     with open("config.ini", "w") as f:
         config.write(f)
     return None
