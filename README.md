@@ -56,7 +56,7 @@ Input your Database File location and start managing and browsing it.
 
 ### 👨‍💻 Contributors
 
-I would be happy to accept a pull request from someone wants to contribute in this project. Anyone who wants to fix bugs and errors. 
+I would be happy to accept a pull request from someone wants to contribute in this project. Anyone who wants to fix bugs and errors, feel free to do it.
 
 ---
 
