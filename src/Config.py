@@ -19,7 +19,7 @@ def CreateConfigFile():
     else:
         if sys.getwindowsversion().major >= 10:
             UseColors = True
-    config["Settings"]["Use-Colors"] = UseColors
+    config["Settings"]["Use-Colors"] = str(UseColors)
     with open("config.ini", "w") as f:
         config.write(f)
     return None
