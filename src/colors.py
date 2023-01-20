@@ -1,8 +1,6 @@
-import sys
-import os
+import Config
 
 def fcolor(r:int, g:int, b:int) -> str:
-    if os.name == 'nt':
-        if sys.getwindowsversion().major < 10:
-            return ""
+    if not bool(Config.Getconfig("Settings", "Use-Colors")):
+        return ""
     return f"\033[38;2;{r};{g};{b}m"
