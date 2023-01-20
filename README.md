@@ -31,10 +31,10 @@ It depends on your download. If you have source code, follow its table. Same thi
 
 - **Important note:** You must have at the least <u>Microsoft Visual C++ 2015</u>: [Download now](https://www.microsoft.com/en-us/download/details.aspx?id=53840)
 
-|                  | Minimum requirements | Recommended requirements |
-| ---------------- | -------------------- | ------------------------ |
-| RAM              | 20 MB                | +256 MB                  |
-| Operating System | Windows 10, 11       | Windows 10               |
+|                  | Minimum requirements            | Recommended requirements |
+| ---------------- | ------------------------------- | ------------------------ |
+| RAM              | 20 MB                           | +256 MB                  |
+| Operating System | Windows 11, 10, 8, 7, Vista, XP | Windows 10               |
 
 Older Windows versions support may be added in the next release.
 
